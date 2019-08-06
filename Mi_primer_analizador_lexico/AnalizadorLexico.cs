@@ -138,6 +138,7 @@ namespace Mi_primer_analizador_lexico
             auxlex = "";
             estado=0;
         }
+        //impresion de lista de tokens
         public void imprimirListaToken(LinkedList<Token> lista)
         {
             foreach (Token item in lista)
