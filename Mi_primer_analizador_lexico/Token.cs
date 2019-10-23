@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Programa desarrollado por Luis Javier Yela Quijada
+//Basado en la catedra del ingeniero Erick Navarro
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +20,8 @@ namespace Mi_primer_analizador_lexico
             SIGNO_DIV,
             SIGNO_POW,
             PARENTESIS_IZQ,
-            PARENTESIS_DER
+            PARENTESIS_DER,
+            ULTIMO
         }
 
         private Tipo tipoToken;
@@ -35,7 +38,12 @@ namespace Mi_primer_analizador_lexico
             return valor;
         }
 
-        public String GetTipo()
+        public Tipo getTipo()
+        {
+            return this.tipoToken;
+        }
+
+        public String GetTipoString()
         {
             switch (tipoToken)
             {

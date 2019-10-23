@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Programa desarrollado por Luis Javier Yela Quijada
+//Basado en la catedra del ingeniero Erick Navarro
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -143,7 +146,7 @@ namespace Mi_primer_analizador_lexico
         {
             foreach (Token item in lista)
             {
-                Console.WriteLine(item.GetTipo() + " <--> " + item.Getval());
+                Console.WriteLine(item.GetTipoString() + " <--> " + item.Getval());
             }
         }
 
